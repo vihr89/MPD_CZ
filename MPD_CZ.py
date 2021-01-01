@@ -45,7 +45,7 @@ from consts import *
 mixer = None
 
 
-class MPD_CZ(ControlSurface):
+class Akai_MPD26(ControlSurface):
     def __init__(self, c_instance):
         ControlSurface.__init__(self, c_instance)
         self._device_selection_follows_track_selection = True
@@ -54,8 +54,8 @@ class MPD_CZ(ControlSurface):
             self._suppress_session_highlight = True
             self._control_is_with_automap = False
             is_momentary = True
-            self._suggested_input_port = 'Akai MPD26'
-            self._suggested_output_port = 'Akai MPD26'
+            self._suggested_input_port = 'Akai_MPD26'
+            self._suggested_output_port = 'Akai_MPD26'
             self.log("BEFORE mixer")
             self._setup_mixer_control()
             self._setup_device_control()
